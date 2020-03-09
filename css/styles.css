@@ -70,3 +70,46 @@ body{
     padding-left: 30px;/* separación entre enlaces*/
     padding-right: 30px;
 }
+
+#posts{
+    width: 60%;
+    float: left;
+    font-family: Arial, Helvetica;
+    text-align: justify;
+}
+
+.post{
+    padding:7px;
+}
+
+.post h2{
+    font-size: 30px;
+    color: #333;
+
+}
+
+.post .date{
+    display: block;
+    color: gray;
+    margin-top: 5px;
+}
+
+.post .p{
+    margin-top: 10%;
+    margin-bottom: 20%;
+    line-height: 22px;
+    
+
+}
+
+.button{
+    padding:15px;
+    background: #235e3d;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+    width: 75px;
+   
+}
