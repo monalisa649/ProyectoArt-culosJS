@@ -1,0 +1,18 @@
+body{
+    background: url("../img/oceano.jpg");
+    background-attachment: fixed;
+}
+
+#logo{
+    
+       background: #086A87; 
+}
+
+#menu ul li:hover{
+    background: #086A87;
+}
+
+.button{
+   
+    background: #086A87; 
+}

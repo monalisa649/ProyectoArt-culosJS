@@ -4,12 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto JavaScript</title>
-    <script></script>
+    <script type="text/JavaScript" src="js/js/jquery-3.4.1.min.js"></script>
+    <script type="text/JavaScript" src="js/main.js"></script>
+    
+    
+    <!--libreria slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!--Fecha de libreria momentjs cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+    
+  
+  
 
     <!--Estilos CSS-->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" id="theme" type="text/css" href="css/green.css">
 </head>
 <body>
+   
+    <div id="selector_theme">
+        <div id="green"></div>
+        <div id="red"></div>
+        <div id="blue"></div>
+    </div>
+
     <section id="global">
        <!--Cabecera-->
         <header>
@@ -27,28 +47,19 @@
             </nav>
         </header>
     <!--Slider-->
-    <div id="slider">
-
+    <div class="slider">
+        <div><img src="img/background.jpg"></div>
+        <div><img src="img/otoño1.jpg"></div>
+        <div><img src="img/oceano.jpg"></div>
+        
     </div>
     <!--Contenido-->
     <section id="content">
         <div id="posts">
-            <article class="post">
-                <h2>Titulo del áticulo</h2>
-                <span class="date">Fecha de publicación</span>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. 
-                </p>
-            <a href="#" class="button">Leer mas</a>
-            </article>
+            
+        <!--Contenido dinámico mostrado desde json-->
         
-        
-            <article class="post">
-                <h2>Titulo del áticulo</h2>
-                <span class="date">Fecha de publicación</span>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. 
-                </p>
-            <a href="#" class="button">Leer mas</a>
-            </article>
+           
         </div>
         <aside id="sidebar">
             <div id="about">
