@@ -5,14 +5,19 @@ body{
 
 #logo{
     
-       background: #DF3A01; 
+       background: #DF3F00D9; 
 }
 
 #menu ul li:hover{
-    background: #DF3A01;
+    background: #DF3F00D9;
 }
 
 .button{
    
-    background: #DF3A01; 
+    background: #DF3F00D9; 
+}
+
+#acordeon h3{
+    background:  #DF3F00D9;
+    
 }

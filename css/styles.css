@@ -82,9 +82,10 @@ body{
     padding:7px;
 }
 
-.post h2{
+h2{
     font-size: 30px;
     color: #333;
+    font-family: Arial, Helvetica;
 
 }
 
@@ -214,3 +215,17 @@ footer{
 #blue{
     background: #086A87;
 }
+
+#arriba{
+    color: white;
+    text-decoration: none;
+    display: block;
+    float: right;
+}
+
+#acordeon{
+    width: 60%;
+    float: left;
+    margin-top: 40px;
+}
+

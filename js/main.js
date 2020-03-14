@@ -1,12 +1,16 @@
 $(document).ready(function(){
 
     //Slider bajado de https://bxslider.com/install/
-        $('.slider').bxSlider({
+       
+    if(window.location.href.indexOf('index') >-1){
+    $('.slider').bxSlider({
           mode: 'fade',
           captions: true,
           slideWidth: 1200,
           speed: 1000
         });
+      }
+      if(window.location.href.indexOf('index') > -1){
         //Código para mostrar posts dinámicos 
         var posts= [
             {
@@ -49,7 +53,8 @@ $(document).ready(function(){
             $("#posts").append(post);
             
         });
-
+      }
+        
         var tema = $("#theme");
       $("#green").click(function(){
         tema.attr("href", "css/green.css")
@@ -68,5 +73,50 @@ $(document).ready(function(){
 
       });
 
+      $("#arriba").click(function(e){
+       Element.preventdefault();
+        $('html, body').animate({
+            scrollTop: 0
+        },500);
+
+        return false;
+      });
+    
+
+
+      //login false
+
+         
+
+      $("#login form").submit(function(){
+        var name = $("#id_nombre").val();  
+        // $("#id_nombre").val();
+            localStorage.setItem("nombre", name);
+            
+        });
+
+      var nombreSesion = localStorage.getItem("nombre");
+
+        if(nombreSesion != null && nombreSesion != "undefined"){
+            var parrafo = $("#about p");
+            parrafo.html("<br> <strong>Bienvenido:" + nombreSesion+"<strong><br>");
+            parrafo.append("<a href='#' id= 'logout'> Cerrar sesión</a>");
+           
+            $("#login").hide();
+            
+            $("#logout").click(function(){
+                localStorage.clear();
+               
+                location.reload();
+            });
+
+            
+            
+        }
+        if(window.location.href.indexOf('about') > -1){
+        $("#acordeon").accordion({
+          animate: 200
+        });
+      }
 
 });
