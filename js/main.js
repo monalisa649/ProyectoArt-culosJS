@@ -7,7 +7,7 @@ $(document).ready(function(){
           mode: 'fade',
           captions: true,
           slideWidth: 1200,
-          speed: 1000
+          speed: 500
         });
       }
       if(window.location.href.indexOf('index') > -1){
@@ -117,6 +117,14 @@ $(document).ready(function(){
         $("#acordeon").accordion({
           animate: 200
         });
+      }
+
+      if(window.location.href.indexOf('reloj') > -1){
+
+        setInterval(function(){
+          var hola = moment().format("h:mm:ss");
+         $("#reloj").html(hola);
+        },1000);
       }
 
 });
