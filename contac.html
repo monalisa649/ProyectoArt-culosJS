@@ -7,12 +7,12 @@
     <script type="text/JavaScript" src="js/js/jquery-3.4.1.min.js"></script>
     <script type="text/JavaScript" src="js/main.js"></script>
     
-    <!--Libreria jQuery UI-->
-    <link rel="stylesheet" href="js/jquery-ui/jquery-ui.min.css" />
-		<link rel="stylesheet" href="js/jquery-ui/jquery-ui.structure.min.css" />
-		<link rel="stylesheet" href="js/jquery-ui/jquery-ui.theme.min.css" />
+    <!--Fecha de libreria momentjs cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
 
-		<script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
+    <!--Script validation jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
     
      <!--Estilos CSS-->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -45,22 +45,27 @@
     
     <section id="content">
         <div id="box">
-            <h2>Sobre mi</h2> 
-            <div id="acordeon">
-                <h3>Tema 1</h3>
-                <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quibusdam ex vero, nihil eveniet voluptatibus numquam voluptates aut ad modi libero dolorem culpa ea dolorum aspernatur? Qui odio pariatur reprehenderit?</p>
-            </div>
-                    <h3>Tema 2</h3>
-                    <div>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam debitis voluptatibus rerum dolor aliquam cumque illo et, id reprehenderit culpa necessitatibus, officia voluptas hic tempora ut ipsam, sit omnis odio!</p>
-                </div>
-                
-                    <h3>Tema 3</h3>
-                <div>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam debitis voluptatibus rerum dolor aliquam cumque illo et, id reprehenderit culpa necessitatibus, officia voluptas hic tempora ut ipsam, sit omnis odio!</p>
-                </div>
-            </div>
+
+            <form action="" method="POST" id="form2">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" data-validation="alphanumeric">
+                <label for="nombre">Apellidos</label>
+                <input type="text" name="apellidos" data-validation="alphanumeric">
+                <label for="nombre">Email</label>
+                <input type="text" name="email" data-validation="email">
+                <label for="genero">Genero</label>
+                <select type="text" name="genero" data-validation="required">
+                    <option value="hombre">Hombre</option>
+                    <option value="mujer">Mujer</option>
+                </select>
+                <label for="fecha">Fecha nacimiento</label>
+                <input type="date" name="fecha" data-validation="date">
+                <label for="edad">Edad</label>
+                <input type="number" name="date" data-validation="number">
+                <input type="submit" value="Enviar">
+
+            </form>
+            
         
         
            

@@ -146,7 +146,9 @@ h2{
 
 form input[type="text"],
 form input[type="email"],
-form input[type="password"]{
+form input[type="password"]
+form input[type="number"]
+select{
     padding: 5px;
     border-radius: 2px solid #ccc;
     width: 95%;
@@ -155,11 +157,14 @@ form input[type="password"]{
 }
 
 form input[type="submit"]{
+    display: block;
     background: #eee;
     padding: 10px;
     border: 1px solid #ccc;
     color: #333;
     cursor:pointer;
+    margin-top: 15px;
+    margin-bottom: 15px;
 
 }
 
@@ -241,4 +246,19 @@ footer{
     margin-top: 40px;
     float: left;
     
+}
+
+#form2{
+    width: 40%;
+    float: left;
+    padding: 5px;
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+label{
+    display: block;
+    margin-top: 5px;
+
 }

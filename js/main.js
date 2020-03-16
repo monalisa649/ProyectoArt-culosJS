@@ -127,4 +127,12 @@ $(document).ready(function(){
         },1000);
       }
 
+      if(window.location.href.indexOf('contac')>-1){
+
+       
+        $.validate({
+          lang: 'es'
+        });
+
+      }
 });
